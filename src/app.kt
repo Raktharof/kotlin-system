@@ -12,5 +12,9 @@ fun main() {
     println(squareB.intersects(squareC))
     println(filledCNPJ.checkFormatAndValue())
     println(filledCNPJ.cnpj)
+
+    println(squareA.calculateIntersectArea(squareB))
+    println(squareA.calculateIntersectArea(squareC))
+    println(squareB.calculateIntersectArea(squareC))
 }
 
