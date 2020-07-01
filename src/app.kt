@@ -1,5 +1,6 @@
-import Classes.CNPJ
-import Classes.Rectangle
+import classes.CNPJ
+import classes.Rectangle
+
 
 fun main() {
     val filledCNPJ = CNPJ("31.605.522/0001-40")

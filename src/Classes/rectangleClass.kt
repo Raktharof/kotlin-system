@@ -1,4 +1,4 @@
-package Classes
+package classes
 
 class Rectangle(a1:Int, a2:Int, b1:Int, b2:Int){
     val x1 = a1;

@@ -1,4 +1,4 @@
-package Classes
+package classes
 
 class CNPJ(cnpj:String){
     val cnpj = cnpj
