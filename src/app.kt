@@ -1,5 +1,8 @@
 import classes.CNPJ
+import classes.DateTime
 import classes.Rectangle
+import com.google.gson.Gson
+import java.net.URL
 
 
 fun main() {
@@ -17,5 +20,7 @@ fun main() {
     println(squareA.calculateIntersectArea(squareB))
     println(squareA.calculateIntersectArea(squareC))
     println(squareB.calculateIntersectArea(squareC))
+    println(DateTime().getDateTimeByZone("CET"))
 }
+
 

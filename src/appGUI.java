@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import classes.Rectangle;
 import classes.CNPJ;
+import classes.DateTime;
 
 public class appGUI {
     private JComboBox cmbInterRec1;
@@ -17,6 +18,9 @@ public class appGUI {
     private JLabel checkText;
     private JLabel calculateText;
     private JLabel validateText;
+    private JComboBox cmbDateTime;
+    private JButton timeCheckButton;
+    private JLabel timeText;
 
 
     public appGUI() {
@@ -55,6 +59,13 @@ public class appGUI {
                 CNPJ filledCNPJ = new CNPJ(cnpj_txt.getText());
 
                 validateText.setText(filledCNPJ.checkFormatAndValue());
+            }
+        });
+        timeCheckButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String date = new DateTime().getDateTimeByZone(cmbDateTime.getSelectedItem().toString());
+                timeText.setText(date);
             }
         });
     }
