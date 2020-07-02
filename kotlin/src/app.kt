@@ -1,8 +1,6 @@
 import classes.CNPJ
 import classes.DateTime
 import classes.Rectangle
-import com.google.gson.Gson
-import java.net.URL
 
 
 fun main() {
@@ -11,16 +9,21 @@ fun main() {
     val squareB = Rectangle(7, 13, 2, 7)
     val squareC = Rectangle(10, 14, 10, 13)
 
+    //exercise 1
     println(squareA.intersects(squareB))
     println(squareA.intersects(squareC))
     println(squareB.intersects(squareC))
-    println(filledCNPJ.checkFormatAndValue())
-    println(filledCNPJ.cnpj)
 
+    //exercise 2 and 3
+    println(filledCNPJ.checkFormatAndValue())
+
+    //exercise 4
     println(squareA.calculateIntersectArea(squareB))
     println(squareA.calculateIntersectArea(squareC))
     println(squareB.calculateIntersectArea(squareC))
-    println(DateTime().getDateTimeByZone("CET"))
+
+    //exercise 6
+    println(DateTime().getDateTimeByZone("UTC"))
 }
 
 
